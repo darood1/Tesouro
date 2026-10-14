@@ -1,0 +1,5 @@
+<!doctype html><meta charset="utf-8"><script>
+const p=location.pathname.replace(/^\//,'').replace(/\/$/,'');
+if(p && !p.includes('.')) location.replace('/'+p+'.html'+location.search+location.hash);
+else location.replace('/');
+</script>
